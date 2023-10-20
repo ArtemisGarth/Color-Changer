@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Space+Grotesk:wght@300;500&family=Ubuntu&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #121212;
+  color: rgb(234, 226, 226);
+  text-align: center;
+  margin: 4rem;
+}
+.main-heading {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 2rem;
+  font-size: 3rem;
+}
+p {
+  margin: 2rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  place-content: center;
+}
+button {
+  padding: 1rem;
+  margin: 15px;
+  width: 8rem;
+  min-width: 6rem;
+  cursor: pointer;
+  border: 2px solid rgb(42, 41, 41);
+  box-shadow: 0px 0px 14px rgb(57 54 54);
+  font-weight: bold;
+  font-family: "Space Grotesk", sans-serif;
+}
+button#grey:hover,
+button#yellow:hover,
+button#red:hover,
+button#blue:hover {
+  background: rgb(201, 187, 187);
+  transition: 0.5s;
+}
+#grey {
+  background-color: grey;
+}
+#yellow {
+  background-color: rgb(221, 221, 73);
+}
+#red {
+  background-color: rgb(215, 50, 50);
+}
+#blue {
+  background-color: rgb(60, 60, 219);
+}
+.svg-icon {
+  cursor: pointer;
+}
+.svg-icon:hover {
+  fill: rgb(229, 214, 214);
+  transition: 0.5s;
+}
+@media (max-width: 500px) {
+  .button {
+    flex-direction: column;
+    padding: 1rem;
+    place-items: center;
+  }
+  button {
+    width: 10rem;
+  }
+}
